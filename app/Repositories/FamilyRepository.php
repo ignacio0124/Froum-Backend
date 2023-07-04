@@ -9,7 +9,7 @@ class FamilyRepository
 {
     protected Family $model;
 
-    function __construct(Family $model)
+    public function __construct(Family $model)
     {
         $this->model = $model;
     }
@@ -19,7 +19,7 @@ class FamilyRepository
      *
      * @return Collection
      */
-    function getList(): Collection
+    public function getList(): Collection
     {
         return $this->model
             ->get();

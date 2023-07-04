@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(FamilyController::class)->group(function () {
     Route::get('/families', 'index');
+    Route::post('/families/{familyId}/favorites', 'setFavorite');
 });
